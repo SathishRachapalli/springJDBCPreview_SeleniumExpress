@@ -1,5 +1,3 @@
-
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 
@@ -16,14 +14,34 @@
 </head>
 <body>
 
-<h1 align="center"> SELENIUM EXPRESS</h1>
+	<h1 align="center">SELENIUM EXPRESS</h1>
 
-<c:forEach var ="student" items="${students}"> 
+<div align="center">
 
-	${student}
-	<br/>
+<table border="1">
+<thead>
+<tr>
+<td>Id</td>
+<td>Name</td>
+<td>Mobile</td>
+<td>Country</td>
+</tr>
+</thead>
+
+	<c:forEach var="student" items="${students}"> 
 	
-</c:forEach>
+	<tr>
+	<td>${student.id}</td>
+	<td>${student.name}</td>
+	<td>${student.mobile}</td>
+	<td>${student.country}</td>
+	</tr>
+
+	</c:forEach>
+
+	</table>
+	
+	</div>
 
 </body>
 </html>
