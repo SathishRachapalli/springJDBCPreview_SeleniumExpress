@@ -8,6 +8,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.example.sm.api.Student;
+import com.example.sm.api.StudentDTO;
 import com.example.sm.rowMapper.studentRowMapper;
 
 
@@ -32,6 +33,23 @@ public class StudentDAOImpl implements StudentDAO {
 		List<Student> studentData = jdbc.query(sql, new studentRowMapper());
 		
 		return studentData;
+	}
+
+
+
+	@Override
+	public void saveStudentRecord(StudentDTO studentDTOObj) {
+		// TODO Auto-generated method stub
+		
+		
+	Object[] args={studentDTOObj.getName(),studentDTOObj.getMobile(),studentDTOObj.getCountry()};
+	
+	String sql="Insert into students(name,mobile,country) values (?,?,?)";
+	
+	 jdbc.update(sql, args);
+	 
+	 System.out.println("Student added successfully!!!");
+
 	}
 
 }

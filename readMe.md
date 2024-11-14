@@ -1,3 +1,4 @@
+
 	STEP 1   --  nov 11 2024
  
  included the below dependencies
@@ -34,4 +35,21 @@
   		STEP 4 
   		
   Creating Dynamic HTML table
+  
+  -----------------------------------------------------------------------------
+  
+  		STEP 5
+  		
+  	-- Adding the 'ADD' buttion-functionality to add the new students
+  	
+  	step1 : create a method for a FORM-APPLICATION in a controller layer
+  	step2 : create a form (add-student.jsp)
+  	step3 : created a studentDTO object (Data Transfer Object)
+  	step4 : captured and saved the submitted student info from front-end
+  	step5 : Saved that particular record into the Database successfully.
+  	Note  : we may see the project is still erroring out, but just go ahead and run the application.
+  	
+ -----------------------------------------------------------------------------
+  	
+  
  		
