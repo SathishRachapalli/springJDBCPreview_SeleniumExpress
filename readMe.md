@@ -50,6 +50,14 @@
   	Note  : we may see the project is still erroring out, but just go ahead and run the application.
   	
  -----------------------------------------------------------------------------
+ 
+ 
+ 			POST - REDIRECT -GET PATTERN
+ 			
+ -> if the user tried to do refresh the addPage, it will continuously getting executed
+ As a result, there would be multiple/duplicate records inserted into DB.
+ 
+ -- To resolve this issue, we should have to implement Post Redirect Get Pattern(PRG pattern).
   	
   
  		

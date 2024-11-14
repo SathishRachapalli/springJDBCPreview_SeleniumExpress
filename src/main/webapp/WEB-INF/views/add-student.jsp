@@ -17,7 +17,7 @@
 <h3>Add Student</h3>
 <!--  creating html form to fill up the new student details -->
 
-<form:form action="save-student" modelAttribute="student" method="GET">
+<form:form action="save-student" modelAttribute="student" method="POST">
 
 			<label>Name : </label>
 			<form:input path="name"/>

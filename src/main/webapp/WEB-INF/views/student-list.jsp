@@ -18,6 +18,16 @@
 
 <div align="center">
 
+
+<form action="addStudent">
+
+<input type="submit" value="ADD STUDENT">
+
+
+</form>
+
+<br/>
+
 <table border="1">
 <thead>
 <tr>
