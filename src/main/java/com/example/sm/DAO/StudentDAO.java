@@ -15,6 +15,8 @@ public interface StudentDAO {
 	Student getStudentInfo(int Id);
 
 	void updatingStudentInfo(Student studentDTOObj);
+
+	void deletingStudent(int id);
 	
 	
 

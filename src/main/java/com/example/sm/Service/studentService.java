@@ -11,6 +11,7 @@ public interface studentService {
 	void saveStudentRecord(Student studentDTOObj);
 	Student gettingStudentInfo(int id);
 	void updateRecord(Student studentDTOObj);
+	void deleteStudent(int id);
 	
 
 

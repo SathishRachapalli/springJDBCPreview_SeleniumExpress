@@ -83,4 +83,18 @@ public class StudentDAOImpl implements StudentDAO {
 		
 	}
 
+
+
+	@Override
+	public void deletingStudent(int id) {
+		
+		
+		String sql="delete from students where id=?";
+		
+		jdbc.update(sql, id);
+		
+		System.out.println("Student record deleted successfully!");
+		
+	}
+
 }

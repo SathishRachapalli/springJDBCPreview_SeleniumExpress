@@ -70,6 +70,19 @@
   4. We have updated the record by adding one method where if (studentDTO.getId()!=0) in controller layer.
   5. We have done some modifications like not used the studentDTO object. But we used the Student entity 
   as the modelAttribute in the jsp pages directly.
+  
+  ---------------------------------------------------------------------------------------------------------
+  
+   			Deleting the student record
+   			
+   1. created a delete link in student-list.jsp page
+   2. developed a /deleteStudent url mapping in controller
+   3. implemented logic to delete a student in the DAO layer
+   4. Building logic to pop up a dialog box while deleting on front-end in student-list.jsp page.
+   
+     ---------------------------------------------------------------------------------------------------------
+   
+  
   	
   
  		

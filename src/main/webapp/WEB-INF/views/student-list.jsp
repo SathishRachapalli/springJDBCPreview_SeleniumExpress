@@ -46,6 +46,12 @@
 	<td>${student.mobile}</td>
 	<td>${student.country}</td>
 	<td><a href="/springJdbc_Preview/updateStudent?userId=${student.id}">Update<a></a></td>
+	<td><a href="/springJdbc_Preview/deleteStudent?userId=${student.id}"  onclick="
+			
+			if(!(confirm('Are you sure to delete this student?')))
+				return false" 
+			>Delete<a></a></td>
+	
 	</tr>
 
 	</c:forEach>
