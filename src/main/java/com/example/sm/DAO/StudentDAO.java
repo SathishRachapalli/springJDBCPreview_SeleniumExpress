@@ -10,6 +10,12 @@ public interface StudentDAO {
 	
 	List<Student> loadStudents();
 
-	void saveStudentRecord(StudentDTO studentDTOObj);
+	void saveStudentRecord(Student studentDTOObj);
+
+	Student getStudentInfo(int Id);
+
+	void updatingStudentInfo(Student studentDTOObj);
+	
+	
 
 }

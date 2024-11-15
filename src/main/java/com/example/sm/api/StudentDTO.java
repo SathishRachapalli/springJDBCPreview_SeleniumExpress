@@ -2,7 +2,7 @@ package com.example.sm.api;
 
 public class StudentDTO {
 	
-	
+	private String id;
 	private String name;
 	private Long mobile;
 	private String country;
@@ -25,6 +25,14 @@ public class StudentDTO {
 	public void setCountry(String country) {
 		this.country = country;
 	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	
+	
 	
 	
 

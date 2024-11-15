@@ -38,18 +38,49 @@ public class StudentDAOImpl implements StudentDAO {
 
 
 	@Override
-	public void saveStudentRecord(StudentDTO studentDTOObj) {
+	public void saveStudentRecord(Student studentDTOObj) {
 		// TODO Auto-generated method stub
 		
+		Object[] args={studentDTOObj.getName(),studentDTOObj.getMobile(),studentDTOObj.getCountry()};
 		
-	Object[] args={studentDTOObj.getName(),studentDTOObj.getMobile(),studentDTOObj.getCountry()};
+		String sql="Insert into students(name,mobile,country) values (?,?,?)";
+		
+		 jdbc.update(sql, args);
+		 
+		 System.out.println("Student added successfully!!!");
+		
 	
-	String sql="Insert into students(name,mobile,country) values (?,?,?)";
-	
-	 jdbc.update(sql, args);
-	 
-	 System.out.println("Student added successfully!!!");
 
+	}
+	
+	
+
+	@Override
+	public Student getStudentInfo(int Id) {
+		// TODO Auto-generated method stub
+		
+		String sql="select * from students where id=?";
+		Student studentInfo = jdbc.queryForObject(sql, new studentRowMapper(), Id);
+		
+		return studentInfo;
+	}
+
+
+
+	@Override
+	public void updatingStudentInfo(Student studentDTOObj) {
+		
+	
+		
+		String sql= "update students set name=?, mobile=?, country=? where id=?";
+		
+		
+		jdbc.update(sql, studentDTOObj.getName(),studentDTOObj.getMobile(),
+				studentDTOObj.getCountry(),studentDTOObj.getId());
+		
+		System.out.println("student info updated successfully!!!");
+		
+		
 	}
 
 }

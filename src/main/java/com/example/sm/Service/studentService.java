@@ -8,7 +8,10 @@ import com.example.sm.api.StudentDTO;
 public interface studentService {
 	
 	List<Student> loadStudents();
-	void saveStudentRecord(StudentDTO studentDTOObj);
+	void saveStudentRecord(Student studentDTOObj);
+	Student gettingStudentInfo(int id);
+	void updateRecord(Student studentDTOObj);
+	
 
 
 }

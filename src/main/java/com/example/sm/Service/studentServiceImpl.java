@@ -23,10 +23,28 @@ public class studentServiceImpl implements studentService {
 	}
 
 	@Override
-	public void saveStudentRecord(StudentDTO studentDTOObj) {
+	public void saveStudentRecord(Student studentDTOObj) {
 		
 		studentRepo.saveStudentRecord(studentDTOObj);
 
 	}
+
+	@Override
+	public Student gettingStudentInfo(int id) {
+		
+		return studentRepo.getStudentInfo(id);
+	}
+
+
+
+	@Override
+	public void updateRecord(Student studentDTOObj) {
+		// TODO Auto-generated method stub
+		
+	studentRepo.updatingStudentInfo(studentDTOObj);
+		
+	}
+
+	
 
 }

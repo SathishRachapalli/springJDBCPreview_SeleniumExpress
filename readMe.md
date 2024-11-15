@@ -58,6 +58,18 @@
  As a result, there would be multiple/duplicate records inserted into DB.
  
  -- To resolve this issue, we should have to implement Post Redirect Get Pattern(PRG pattern).
+ 
+  -----------------------------------------------------------------------------
+ 
+ 		UPDATING THE STUDENT RECORD.
+ 		
+ 		->modify the student-page and provide update link for each student row on page.
+  1. create a update handler method in controller class. ("/updateStudent")
+  2. Redirect to add-student.jsp page with already retrieved data.
+  3. we have collected the Id from already retrieved data.
+  4. We have updated the record by adding one method where if (studentDTO.getId()!=0) in controller layer.
+  5. We have done some modifications like not used the studentDTO object. But we used the Student entity 
+  as the modelAttribute in the jsp pages directly.
   	
   
  		

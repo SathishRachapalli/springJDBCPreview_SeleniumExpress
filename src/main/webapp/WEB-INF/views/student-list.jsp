@@ -45,6 +45,7 @@
 	<td>${student.name}</td>
 	<td>${student.mobile}</td>
 	<td>${student.country}</td>
+	<td><a href="/springJdbc_Preview/updateStudent?userId=${student.id}">Update<a></a></td>
 	</tr>
 
 	</c:forEach>
