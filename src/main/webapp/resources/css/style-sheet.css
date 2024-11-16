@@ -9,19 +9,25 @@ h1 {
 	font-family: monospace;
 }
 
-.myButton
-{
+.myButton {
 	color: white;
 	background-color: green;
 	border: 2px solid black;
 	font-size: 24px;
 	padding: 10px 10px 10px 10px;
-	transition-duration: 1s;
-	
+	transition-duration: 0.5s;
 }
 
-.myButton:hover
-{
+.myButton:hover {
 	background-color: yellow;
 	color: black;
 }
+
+
+.myTable
+{
+   width: 50%;
+   font-family: sans-serif;
+   
+}
+
