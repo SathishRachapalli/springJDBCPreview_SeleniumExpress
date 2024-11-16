@@ -81,7 +81,19 @@
    4. Building logic to pop up a dialog box while deleting on front-end in student-list.jsp page.
    
      ---------------------------------------------------------------------------------------------------------
+   1. Building/Applying CSS and BootStrap to improve the aesthetics of our application.
+   2. created a separate folder to handle all the css,images and js things globally instead of 
+   implementing in each and every file.
+   3. Using css functionalities wherever we needed them.
    
+     ---------------------------------------------------------------------------------------------------------
+  		MAKING USE OF ALREADY DESIGNED CSS CLASSES USING BOOTSTRAP 
+  
+  1. visit this url:  https://getbootstrap.com/docs/5.3/content/tables/#accented-tables
+  and search for whatever the items we needed such as tables, buttons etc.
+  
+       ---------------------------------------------------------------------------------------------------------
+  
   
   	
   

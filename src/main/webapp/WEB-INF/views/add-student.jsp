@@ -1,5 +1,5 @@
 
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>  
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -10,32 +10,47 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Add Student</title>
+
+
+<link rel="stylesheet" type="text/css"
+	href="/springJdbc_Preview/URLtoHandleResourcesFolder/add-student.css">
+<link rel="stylesheet" type="text/css"
+	href="/springJdbc_Preview/URLtoHandleResourcesFolder/style-sheet.css">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+	crossorigin="anonymous">
+
+
 </head>
-<body>
 
 <div align="center">
-<h3>Add Student</h3>
-<!--  creating html form to fill up the new student details -->
+	<h1>Add Student</h1>
+	<!--  creating html form to fill up the new student details -->
 
-<form:form action="save-student" modelAttribute="student" method="POST">
+	<form:form action="save-student" modelAttribute="student" method="POST">
 
-			<form:hidden path="id"/>
-		
-			<label>Name : </label>
-			<form:input path="name"/>
-			<br/>
+		<form:hidden path="id" />
 
-			<label>Mobile : </label>
-			<form:input path="mobile"/>
-			<br/>
+		<label>Name : </label>
+		<form:input path="name" />
+		<br />
 
-			<label>Country : </label>
-			<form:input path="country"/>
-			<br/>
+		<label>Mobile : </label>
+		<form:input path="mobile" />
+		<br />
 
-			<input type="submit" value="Submit">
+		<label>Country : </label>
+		<form:input path="country" />
+		<br />
 
-</form:form>
+		<input type="submit" value="Submit" class="myButton">
+
+	</form:form>
+
+
+
 
 </div>
 
